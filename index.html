@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pankaj Rai - Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-left">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-img">
+        <div class="header-text">
+          <h1>Pankaj Rai</h1>
+          <h2>Engineering Student</h2>
+          <div class="social-icons">
+            <a href="https://wa.me/919930795630" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:to.pankajrai@gmail" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pankaj-r-21559b2a6" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/official_pankaj__877?igsh=bXRqbm50dW4ycWFh" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="tel:+919930795630" class="contact-button"><i class="fas fa-paper-plane"></i>Contact Me</a>
+
+    </header>
+
+    <div class="main">
+      <!-- Left Column -->
+      <div class="left-column">
+        <section class="about">
+          <h3>About Me</h3>
+          <p> I am Bachelor's Of Engineering student in Information Technology.
+        </section>
+
+        <section class="experience">
+          <h3>Work Experience</h3>
+          <h4>....................Nothing.......................</h4>
+                 </section>
+
+        <section class="education">
+          <h3><i class="fas fa-university" style="color: #4CAF50; margin-right: 8px;"></i>Education</h3>
+         <p>
+  <strong>Bachelor's of Engineering in Information Technology</strong><br>
+  College:-<a href="https://vpmthane.org/vpmcoe/index.html" target="_blank" style="color: #4CAF50; text-decoration: none;">
+    VPM College of Engineering
+  </a><br>
+  2024 – XYZ
+</p>
+
+        </section>
+      </div>
+
+      <div class="right-column">
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt marker-icon"></i> Mumbai, India</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:to.pankajrai@gmail.com">to.pankajrai@gmail.com</a></p>
+          <p><i class="fas fa-link"></i> <a href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pankaj-r-21559b2a6">https://pankajlinkedin.com</a></p>
+        </div>
+
+        <section class="skills">
+          <h3>Skills</h3>
+          <label>HTML</label>
+          <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+
+          <label>JavaScript</label>
+          <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+           <label>Data structure</label>
+          <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+
+        </section>
+<section class="languages">
+  <h3>Languages</h3>
+  <ul class="language-list">
+    <li>
+      <h4>English:</h4>
+      
+      <span class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </span>
+    </li>
+    <li>
+     <h4>Hindi:</h4>
+      <span class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+    </li>
+    <li>
+      <h4>Bhojpuri:</h4>
+      <span class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </span>
+    </li>
+  </ul>
+</section>
+
+      </div>
+    </div>
+  </div>
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const profilePic = document.getElementById("profilePic");
+  const close = document.querySelector(".close");
+
+  profilePic.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  close.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</style>
+</script>
+</body>
+</html>
